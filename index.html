@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="1800">
+  <title>Llama Llama Llama...</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!--
+  Locations:
+
+  Marthas Vineyard [left] 02568
+  Loveland, Colorado [top right] 80537
+  Salt Lake City [bottom right] 84036
+  -->
+
+  <div class="container">
+    <div class="streams-list">
+      <ul>
+        <li>
+          <img class="stream" src="http://151.204.229.184:10202/nphMotionJpeg?Resolution=640x480&Quality=Standard">
+          <div class="weather marthas-vineyard-weather"></div>
+        </li>
+        <li>
+          <object type="application/x-shockwave-flash" id="player-container" name="player-container" data="http://www.streamn.com/FlashPlayer/player-quick.swf" style="visibility: visible;">
+            <param name="allowFullScreen" value="false">
+            <param name="allowScriptAccess" value="sameDomain">
+            <param name="bgcolor" value="transparent">
+            <param name="wmode" value="transparent">
+            <param name="flashvars" value="rtmp=rtmp://64.182.45.206:5119/alpaca1&amp;autoplay=true&amp;showMetadata=true&amp;showLiveCaption=true&amp;livelabelshowbg=false&amp;showErrorInPlayer=true&amp;autoReconnect=false&amp;playerID=player-container">
+          </object>
+          <div class="weather loveland-weather"></div>
+        </li>
+        <li>
+          <object type="application/x-shockwave-flash" id="player-container" name="player-container" data="http://www.streamn.com/FlashPlayer/player-quick.swf" style="visibility: visible;">
+            <param name="allowFullScreen" value="true">
+            <param name="allowScriptAccess" value="sameDomain">
+            <param name="bgcolor" value="transparent">
+            <param name="wmode" value="transparent">
+            <param name="flashvars" value="rtmp=rtmp://64.182.45.206:5119/bluemoon1&amp;autoplay=true&amp;showMetadata=true&amp;showLiveCaption=true&amp;livelabelshowbg=false&amp;showErrorInPlayer=true&amp;autoReconnect=false&amp;playerID=player-container">
+          </object>
+          <div class="weather salt-lake-city-weather"></div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="btn-group">
+      <button type="button" class="prev">Previous</button>
+      <button type="button" class="next">Next</button>
+    </div>
+
+  </div>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
